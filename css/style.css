@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-main {
-    margin: auto;
-    height: 400px;
-}
 
+/* Header */
 header{
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color:rgb(58, 33, 39);
     opacity: 0.5;
     color: #FFFFFD;
-    padding: 10px;
     display: flex;
+    background-attachment: fixed;
 }
 
 .main-header-container{
@@ -28,7 +25,6 @@ header{
     font-family: 'Pacifico', cursive;
     font-family: 'Satisfy', cursive;
     margin-left: 32px;
-
 }
 
 .links-container{
@@ -46,32 +42,141 @@ header{
     font-weight: bold;
 }
 
-
-.links li{
+.links li {
     padding: 4px;
     margin: 0 16px;
     font-size: 18px;
 }
-.links :hover {
-    color: #F7CE3E;
-    font-size: 20px;
-    transition: 0.8s;
-    text-decoration: none;
-}
-
-a {
+.links li a {
     color: inherit;
 }
-
-a :hover{
-    color:#F7CE3E; 
-    transition: 0.8s;
+.links li a:hover, .midia a:hover {
+    color: #F7CE3E;
+    transition: 0.5s;
+    text-decoration: none
 }
+
+.midia-container {
+    display: flex;
+    align-items: center; 
+}
+
 .midia{
     display: flex;
     flex-direction: column;
     margin-right: 20px;
     align-items: center;
-    color: white;
     font-size: 20px;
+}
+
+.midia a {
+    color:#FFFFFD; 
+}
+
+
+main {
+    background-image: url(../assets/images/violão-bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed;
+    color: #FFFFFD;
+    font-size: 32px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content {
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+}
+
+.main-info {
+    max-width: 60%;
+    padding: 50px;
+    color: #fff;
+    font-family: 'Satisfy', cursive;
+    opacity: 0.8;
+}
+
+/* Biography */
+
+.initial-description-overlay {
+    background-color: #6A6366;
+    opacity: 0.9;
+    margin:auto;
+    width: 100%; 
+}
+
+.initial-description {
+    height: 700px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.biography{
+    max-width: 220px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff !important;
+    border-color: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    background-color: #222;
+    padding: 20px;
+}
+
+.biography-description{
+    font-size: 18px;  
+    max-width: 900px;
+    line-height: 1.6;
+    text-indent: 1.5em;
+    text-align: justify;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* 
+.initial-description img {
+    width: 360px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+} */
+
+
+/* Galery */
+
+.initial-galery-overlay {
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+.carousel-inner {
+   width: 300px;
+   height: 300px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
 }
