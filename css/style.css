@@ -5,8 +5,7 @@
 header{
     width: 100%;
     height: 100px;
-    background-color:rgb(58, 33, 39);
-    opacity: 0.5;
+    background-color:rgba(58, 33, 39, 0.5);
     color: #FFFFFD;
     display: flex;
     background-attachment: fixed;
@@ -103,7 +102,6 @@ main {
     padding: 50px;
     color: #fff;
     font-family: 'Satisfy', cursive;
-    opacity: 0.8;
 }
 
 /* Biography */
@@ -123,7 +121,7 @@ main {
     flex-direction: column; 
 }
 
-.biography{
+.biography ,.galery {
     max-width: 220px;
     background-color: white;
     font-size: 16px;
@@ -163,20 +161,27 @@ main {
 
 /* Galery */
 
-.initial-galery-overlay {
-    width: 100%;
-    background-color: black;
+.box-galery {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-
-
+.initial-galery-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+}
 
 .carousel-inner {
    width: 300px;
-   height: 300px;
+   height: 600px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+
 }
 
 .carousel-item img {
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 500px;
 }
