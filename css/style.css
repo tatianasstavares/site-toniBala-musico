@@ -49,7 +49,7 @@ header{
 .links li a {
     color: inherit;
 }
-.links li a:hover, .midia a:hover {
+.links li a:hover {
     color: #F7CE3E;
     transition: 0.5s;
     text-decoration: none
@@ -70,6 +70,21 @@ header{
 
 .midia a {
     color:#FFFFFD; 
+}
+
+.midia :first-child :hover {
+    color:#DA0050;
+    transition: 0.5s;
+}
+
+.midia :nth-child(2) :hover  {
+    color: #1094F4;
+    transition: 0.5s;
+}
+
+.midia :last-child :hover {
+    color: #00E676;
+    transition: 0.5s;
 }
 
 
@@ -114,14 +129,14 @@ main {
 }
 
 .initial-description {
-    height: 700px;
+    height: 900px;
     padding: 40px;
     display: flex;
     align-items: center;
     flex-direction: column; 
 }
 
-.biography ,.galery {
+.biography, .galery {
     max-width: 220px;
     background-color: white;
     font-size: 16px;
@@ -145,18 +160,14 @@ main {
     text-align: justify;
     font-size: 18px;
     color: #fff;
+    vertical-align: top;
 }
 
-/* 
-.initial-description img {
-    width: 360px;
-    max-height: 300px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 50%;
-} */
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+}
 
 
 /* Galery */
@@ -169,6 +180,7 @@ main {
 
 .initial-galery-overlay {
     width: 100%;
+    height: 1200px;
     background-color: rgba(0, 0, 0,0.5);
 }
 
@@ -185,3 +197,16 @@ main {
     height: 400px;
     width: 500px;
 }
+
+.active {
+    display: flex !important;
+}
+.container-iframe {
+   display: flex;
+   justify-content: center;
+}
+
+.container-iframe iframe {
+    margin: 10px;
+}
+
