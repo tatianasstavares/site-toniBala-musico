@@ -3,13 +3,32 @@
 
 /* === Header === */
 
-header {
-  width: 100%;
-  height: 100px;
+nav {
   background-color: rgba(58, 33, 39, 0.5);
-  color: #fffffd;
+  color: #fff;
+}
+
+.nav-link {
   display: flex;
-  background-attachment: fixed;
+  list-style: none;
+  justify-content: center;
+  margin: 16px 10px;
+  font-size: 16px;
+  color: #fffffd;
+  text-transform: uppercase;
+  font-weight: bold;;
+}
+
+.nav-link li {
+  padding: 4px;
+  margin: 0 16px;
+  font-size: 18px;
+}
+.nav-link :hover {
+  color: #02135B;
+  opacity: 0.9;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 .main-header-container {
@@ -27,66 +46,6 @@ header {
   margin-left: 32px;
 }
 
-.links-container {
-  flex: 1;
-}
-
-.links {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  margin: 16px 10px;
-  font-size: 16px;
-  color: #fffffd;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.links li {
-  padding: 4px;
-  margin: 0 16px;
-  font-size: 18px;
-}
-.links li a {
-  color: inherit;
-}
-.links li a:hover {
-  color: #f7ce3e;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.midia-container {
-  display: flex;
-  align-items: center;
-}
-
-.midia {
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  align-items: center;
-  font-size: 20px;
-}
-
-.midia a {
-  color: #fffffd;
-}
-
-.midia :first-child :hover {
-  color: #da0050;
-  transition: 0.5s;
-}
-
-.midia :nth-child(2) :hover {
-  color: #1094f4;
-  transition: 0.5s;
-}
-
-.midia :last-child :hover {
-  color: #00e676;
-  transition: 0.5s;
-}
  /* === Main === */
 
 main {
@@ -100,6 +59,23 @@ main {
   justify-content: center;
 }
 
+
+.scrollToTop{   
+  position:fixed;
+  bottom: 40px;
+  right:40px;
+  z-index: 10;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.scrollToTop:hover {
+  color: #02135B;
+  opacity: 0.9;
+  transition: 0.5s;
+  text-decoration: none;
+}
 .main-content {
   height: calc(100vh - 100px);
   display: flex;
@@ -112,7 +88,7 @@ main {
 }
 
 .main-info {
-  max-width: 60%;
+  width: 60%;
   padding: 50px;
   color: #fff;
   font-family: "Satisfy", cursive;
@@ -135,6 +111,7 @@ main {
 }
 
 .biography-btn {
+  width: 120px;
   margin: auto;
   border: none;
   outline: 0;
@@ -187,6 +164,8 @@ main {
 }
 
 .gallery-btn {
+  width: 120px;
+  text-align: center;
   margin: auto;
   border: none;
   outline: 0;
@@ -207,7 +186,7 @@ main {
     cursor: pointer;
 }
 
-.card:after,.card:before{
+.card:after, .card:before{
     content: "";
     position:absolute;
     bottom: 0;
@@ -236,6 +215,15 @@ main {
 .card:hover::after {
     transform: scaleX(1);
 }
+
+.card-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  text-align: left;
+}
+
 /* === Parcerias === */
 
 .partnerships-container {
@@ -243,11 +231,11 @@ main {
   padding: 24px;
 }
 .partnerships-btn {
-  max-width: 120px ;
+  width: 120px ;
   margin: auto;
   border: none;
   outline: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-size: 18px;
   padding: 8px 14px;
   text-transform: uppercase;
@@ -257,7 +245,194 @@ main {
 }
 
 
-.carousel-item iframe {
+.carousel-item {
   text-align: center;
 }
+
+/* === CONTATOS === */
+
+.contact-container {
+  background-color: #6a6366;
+  color: #fffffd;
+  opacity: 0.9;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+ .contact-btn {
+  /* margin: auto; */
+  outline: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  padding: 16px 52px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: 4px solid #02135B;
+} 
+
+.contact {
+  background-color:  #02135B;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.contact:hover {
+  border: 4px solid #02135B;
+  box-shadow: 0 0 40px 40px  #6a6366 inset;
+  opacity: 0.9;
+  color: #02135B;
+  font:bold 16px;
+}
+
+.contact-events,.contact-social-media {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fffffd;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.midia-contact {
+  width: 132px;
+  font-size: 24px;
+  display: flex;
+  justify-content:space-between;
+  margin-right: 5%;
+}
+
+.contact-phone {
+  font-size: 16px;
+  font-style: italic;
+}
+.midia-contact a {
+  color: #fff;
+}
+
+.midia-contact :first-child :hover {
+  color: #da0050;
+  transition: 0.5s;
+}
+
+.midia-contact :nth-child(2) :hover {
+  color: #1094f4;
+  transition: 0.5s;
+}
+
+.midia-contact :last-child :hover {
+  color: #00e676;
+  transition: 0.5s;
+}
+
+/* === FOOTER === */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.9); 
+  height: 80px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 24px 8px;
+}
+
+/* === MODAL === */
+
+.modal-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 90;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0s, visibility 1s;
+}
+
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-container {
+  width: 50%;
+  height: 65%;
+  background-color:#1d2d74;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.modal-container > p {
+  font-size: px;
+  color: #fff;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > input {
+  width: 300px;
+  height: 40px;
+  margin-top: 12px;
+  border: none;
+  padding: 12px;
+}
+
+.form-container > textarea {
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.submit-reset {
+  text-align: center;
+  border: none;
+  padding: 4px;
+}
+
+.submit-reset > input {
+  margin: 8px;
+  border:none;
+}
+
+.modal-container > span {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    margin-bottom: 16px;
+  }
+
+  .main-info {
+    width: 100%;
+  }
+
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+
 
