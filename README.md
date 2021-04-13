@@ -1,5 +1,6 @@
-# Site com o portfolio e contatos do músico Toni Bala
+# Website with the portfolio and contacts of the musician Toni Bala
 
-Esse projeto está sendo criado, para mostrar a trajetória do violonista Toni Bala, um músicoe que encanta as noites cearenses.
-Tem por objetivo a captura de novos contratos para o músico, uma vez que seu portfólio e seus contatos estarão disponíveis no site
-.O p rojeto vai ser feito com as tecnologias HTML, CSS, JavaScript e Bootstrapp.
+This project shows the trajectory of the guitarist Toni Bala. It aims to capture new contracts for the musician since his portfolio and contacts are available on the website. Using ***HTML, CSS, JavaScript*** and, ***Bootstrap technologies***.
+
+
+
